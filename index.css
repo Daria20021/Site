@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+body{
+	position: relative;
+	height: 2600px;
+    background: linear-gradient(180deg, rgba(54, 51, 91, 0) 0%, #1F2E53 68.39%);
+}
+
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+}
+
+figure{
+	width: 100%;
+	height: 52%;
+	margin: 0;
+	overflow: hidden;
+}
+figure img{
+	width: 100%;
+	margin: -2% 0 0 0;
+	
+}
+
+.slider{
+	width: 400px;
+	height: 500px;
+	overflow: hidden;
+	border: 5px solid #fff;
+}
+
+.middle{
+ position: absolute;
+ top: 30%;
+ left: 5%;
+}
+
+.navigation{
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+
+}
+
+.bar{
+	width: 30px;
+	height: 15px;
+	margin: 4px;
+	cursor: pointer;
+	background: #83b8de;
+	opacity: .8;
+	border-radius: 5px;
+	transition: all .4s ease;
+}
+
+.bar:hover{
+	transform: scale(1.2);
+	opacity: 1.8;
+}
+
+input[name="r"] {
+	position: absolute;
+	visibility: hidden;
+}
+.slides{
+	width: 400%;
+	height: 100%;
+	display:flex;
+}
+
+.slide{
+	width: 25%;
+	transition: all .6s ease;
+}
+
+.slide img{
+	width: 100%;
+	height: 100%;
+}
+
+#r1:checked ~ .s1 {
+	margin-left: 0;
+}
+#r2:checked ~ .s1 {
+	margin-left: -25%;
+}
+#r3:checked ~ .s1 {
+	margin-left: -50%;
+}
+#r4:checked ~ .s1 {
+	margin-left: -75%;
+}
+
+.sl{
+	width: 400px;
+	height: 500px;
+	overflow: hidden;
+	border: 5px solid #fff;
+}
+
+.mid{
+ position: absolute;
+ top: 30%;
+ right: 5%;
+}
+
+.navigation2{
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+
+}
+
+.bar2{
+	width: 30px;
+	height: 15px;
+	margin: 4px;
+	cursor: pointer;
+	background: #83b8de;
+	opacity: .8;
+	border-radius: 5px;
+	transition: all .4s ease;
+}
+
+.bar2:hover{
+	transform: scale(1.2);
+	opacity: 1.8;
+}
+
+input[name="rd"] {
+	position: absolute;
+	visibility: hidden;
+}
+.slides2{
+	width: 400%;
+	height: 100%;
+	display:flex;
+}
+
+.slide2{
+	width: 25%;
+	transition: all .6s ease;
+}
+
+.slide2 img{
+	width: 100%;
+	height: 100%;
+}
+
+#rd1:checked ~ .s2 {
+	margin-left: 0;
+}
+#rd2:checked ~ .s2 {
+	margin-left: -25%;
+}
+#rd3:checked ~ .s2 {
+	margin-left: -50%;
+}
+#rd4:checked ~ .s2 {
+	margin-left: -75%;
+}
+ .text{
+ position: absolute;
+ font-family: 'Bad Script', cursive;
+ color: white;
+ font-size: 38px;
+ width: 720px;
+ top: 57%;
+ left: 57%; 
+}
+
+.name{
+position: absolute;
+top: 46%;
+left:50%;
+transform: translate(-50%, 0);
+color: white;
+font-size: 45px;
+}
+
+.name h3{
+font-family: 'Trade Winds', cursive;
+}
+.name p{
+font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.link{
+position: absolute;
+top: 5%;
+left: 5%;
+}
+
+.link a{
+font-family: 'Montserrat Alternates', sans-serif;
+color: white;
+font-size: 30px;
+line-height: 65px;
+text-decoration: none;
+}
+.link a::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: white;
+	transition: width .7s;
+}
+.link a:hover::after{
+	width: 100%;
+}
+.form{
+	top: 5%;
+	right: 5%;
+	position: absolute;
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #8298C2;
+	border-radius: 20px;
+}
+.auth{
+	font-family: 'Bad Script', cursive;
+	font-size: 30px;
+	color: white;
+	padding: 0px 25px;
+}
+.form input{
+	font-family: 'Bad Script', cursive;
+	font-size: 20px;
+	padding: 3px;
+	margin: 5px 0px;
+	border-radius: 10px;
+}
+.form-btn{
+	font-family: 'Bad Script', cursive;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	padding: 5px 30px;
+	color: white;
+	background:#AFC1E2;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	cursor: pointer;
+	}
+
+.menu{
+position: absolute;
+left: 15%;
+top: 57%;
+width: 33vw;
+transform: translate(10%, 0);
+background-color: rgba(54, 51, 91, 0);
+
+}
+.menu a{
+width: 15vw;
+display: block;
+padding: 18px 0px 18px 8vw;
+justify-content: center;
+align-items: center;
+font-family: 'Bad Script', cursive;
+font-size: 25px;
+color: white;
+letter-spacing: .3em;
+border-bottom: 1px solid white;
+border-right: 1px solid white;
+border-left: 1px solid white;
+border-top: 1px solid white;
+
+}
+.menu a:hover{
+background-color: #8298C2;
+}
+.menu a.active{
+background-color: #8298C2;
+}
+
+.search-box{
+position: absolute;
+top: 55%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #303636;
+height: 40px;
+border-radius: 40px;
+padding: 5px;
+}
+.search-btn{
+color: #8298C2;
+float: left;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #303636;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+}
+.search-txt{
+border: none;
+background: none;
+outline: none;
+float: right;
+padding: 0;
+color: white;
+font-size: 20px;
+line-height: 40px;
+width: 25vw;
+}
+
+.social{
+position: absolute;
+margin: 0;
+top: 95%;
+right: 50%;
+transform: translate(50%, 0%);
+}
+.social a{
+display: inline-flex;
+width: 55px;
+height: 55px;
+background:#8298C2;
+color: white;
+margin: 20px;
+border-radius: 50%;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+font-size: 34px;
+}
+
+.social a:hover{
+background: #B0DCF2;
+}
+
+.social a i{
+transition: 0.5s all;
+}
+
+.social a:hover i{
+transform: scale(2) rotate(25deg);
+color: #3A5A9D;
+}
+ .font1{
+font-family: 'Montserrat Alternates', sans-serif;
+}
+.font2{
+font-family: 'Bad Script', cursive;
+
+}
+
+.font3{
+font-family: 'Trade Winds', cursive;
+}
+
+@media all and (max-width: 1012px) {
+
+body{
+
+	height: 3200px;
+}
+.name{
+	top: 12.5%;
+}
+
+.link {
+	top: 1%;
+}
+.form{
+    	width: 200px;
+    	top: 1.5%;
+    	right: 2%;
+    }
+    .auth{
+	font-size: 24px;
+	padding: 0px 3px;
+}
+    .form input{
+      font-size: 15px;
+      margin: 3px 0px;
+}
+
+    .form-btn{
+    	font-size: 18px;
+    	padding: 3px 25px;
+}
+
+.slider{
+	width: 400px;
+	height: 600px;
+}
+
+.sl{
+	width: 400px;
+	height: 600px;
+}
+
+.middle{
+	top: 75%;
+}
+ .mid{
+ 	top: 75%;
+ 	right: 5%;
+ }
+.search-box{
+		top: 20%;
+		left: 52%;
+		padding: 7px;
+		width: 750px;
+	}
+
+.search-txt{
+		width: 700px;
+		font-size: 32px;		
+}
+ .search-box{
+ 	font-size: 28px;
+ }
+.text{
+	top: 22%;
+	left: 7%;
+	width:850px;
+}	
+.menu a{
+	width: 500px;
+	font-size: 32px;
+	padding: 5px 0 5px 80%;
+}
+.menu{
+	top: 48%;
+	left: 8%;
+}
+.social{
+	top: 96%;
+}
+}
